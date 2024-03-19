@@ -27,6 +27,10 @@ html, body {
     background-size: cover;
 }
 
+p{
+    font-size: 12px;
+}
+
 #container {
     background-color: rgba(235, 223, 241, 0.7);
     width: 100%;
