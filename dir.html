@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang = "kr">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta property = "og:type" content = "website">
+    <meta property = "og:url" content = "osong.kr">
+    <meta property = "og:image" content = "https://osong.kr/src/ogosong.jpeg">
+    <meta property = "og:image:type" content = "image/jpeg">
+    <meta property = "og:title" content = "오송스튜디오">
+    <meta property = "og:description" content = "분기의 힘으로 미래로 나아가다">
+    <meta property = "og:site_name" content = "OSONG LLC.">
+    <meta property = "og:locale" content = "ko_KR">
+    <link rel = "icon" href = "./src/osong.png"/>
+    <title>오시는 길 - OSONG</title>
+    <link rel = "stylesheet" href = "./src/style_new.css">
+    <script src="https://npm.2w.vc/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar">
+        <div id="inner">
+            <a id="item" href="./"><img src="./src/icon.png">OSONG</a>
+            <div id="fill"></div>
+            <a id="item" href="./"><div id="active">홈</div><div id="deactive">홈</div></a>
+            <a id="item" href="./dir.html" class="active"><div id="active">오시는 길</div><div id="deactive">오시는 길</div></a>
+        </div>
+    </div>
+
+    <div id="scroll">
+        <div id = "main">
+            <div id="main-top">
+                <div id="inner">
+                    <h1 id = "title">오시는 길</h1>
+                    <p id = "description">오송스튜디오의 영업소 및 판매점을 확인해 보세요!</p>
+                    <div id="detail">
+                        <div id="icon"></div>
+                        <div id="text">아래로 내려 확인하기</div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-content">
+                sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>sdlkfasdflkjs<br>ㅇㄹㅇㄹ<br>
+            </div>
+        </div>
+
+        <div id="footer">
+            
+        </div>
+    </div>
+
+    <script>
+        let windowWidth = $(window).width(); // 전역 변수로 변경
+        let windowHeight = $(window).height(); // 전역 변수로 변경
+
+        $(window).resize(function() {
+            windowWidth = $(window).width(); // 전역 변수 업데이트
+            windowHeight = $(window).height(); // 전역 변수 업데이트
+            $("#main-top").css({
+                "width": `${windowWidth}px`,
+                "height": `${windowHeight}px`
+            });
+        });
+
+        $(document).ready(function() {
+            $(window).trigger("resize");
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 64) { // 스크롤 위치가 64px 이상이면
+                    $("#navbar").addClass("scrolled"); // #navbar에 scrolled 클래스 추가
+                } else {
+                    $("#navbar").removeClass("scrolled"); // 그렇지 않으면 scrolled 클래스 제거
+                }
+            });
+        });
+
+        // detail 클릭 시 화면 아래로 스크롤 이동
+        $("#detail").click(function() {
+            $("html, body").animate({scrollTop: windowHeight}, 500);
+        });
+    </script>
+</body>
+</html>

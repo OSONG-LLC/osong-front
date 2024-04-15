@@ -23,7 +23,7 @@ html, body {
     position: relative;
     text-align: justify;
     color: #2B274B;
-    background-image: url("./osongstation.png");
+    background-image: url("./background/osongstation.png");
     background-size: cover;
 }
 
