@@ -228,6 +228,17 @@ body #inner{
     margin-bottom: 64px;
 }
 
+#main-content #inner #item-container{
+    margin-bottom: 64px;
+}
+
+#main-content #inner #item{
+    border: solid 2px rgba(58, 58, 96, 0.1);
+    border-radius: 24px;
+    margin-top: 16px;
+    padding: 24px;
+}
+
 #footer{
     background-color: #F4EEFB;
 }
