@@ -151,8 +151,18 @@ body #inner{
     height: fit-content;
 }
 
-#main-top{
+#app-dir #main-top{
     background-image: url("./background/dir.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: -64px;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+#app-ecosong #main-top{
+    background-color: #DEC49F;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,6 +195,12 @@ body #inner{
 #main-top #inner #title{
     font-size: 64px;
     font-weight: 700;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#main-top #inner #title-img{
+    height: 256px;
     flex-direction: row;
     justify-content: center;
 }
