@@ -232,6 +232,10 @@ body #inner{
     margin-bottom: 64px;
 }
 
+#main-content #inner p{
+    margin-top: 4px;
+}
+
 #main-content #inner #item{
     border: solid 2px rgba(58, 58, 96, 0.1);
     border-radius: 24px;
