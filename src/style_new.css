@@ -90,8 +90,8 @@ body #inner{
     position: relative;
     font-size: 15px;
     white-space: nowrap;
-    margin: 10px 0 10px 24px;
-    padding: 0 10px;
+    margin: 8px 0 8px 24px;
+    padding: 0 8px;
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ body #inner{
 
 #navbar #inner #item:first-child img{
     height: 24px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
   
 #navbar #inner #item #active{
@@ -224,7 +224,15 @@ body #inner{
 #main-content{
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 100px;
-    margin-right: -32px;
-    margin-bottom: 72px;
+    margin-top: 128px;
+    margin-bottom: 64px;
+}
+
+#footer{
+    background-color: #F4EEFB;
+}
+
+#footer #inner{
+    margin: 64px auto;
+    opacity: 0.8;
 }
