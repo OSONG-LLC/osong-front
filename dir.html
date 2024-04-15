@@ -50,7 +50,7 @@
             <div id="inner">
                 <h4>유한책임회사 오송스튜디오</h4>
                 <p>법인등록번호: 160115-0000822</p>
-                <p>대표자: 홍은표 | 고객센터: 010-9972-7439</p>
+                <p>대표자: 홍은표 | 대표전화: 010-9972-7439</p>
                 <p>본점소재지: 대전광역시 서구 갈마로 307, 204호</p>
                 <p>사업자 등록번호: 562-88-02727 | 통신판매업 신고번호: 2024-대전서구-0348</p>
             </div>
@@ -74,7 +74,7 @@
             $(window).trigger("resize");
 
             $(window).scroll(function() {
-                if ($(this).scrollTop() > 64) { // 스크롤 위치가 64px 이상이면
+                if ($(this).scrollTop() >= 64) { // 스크롤 위치가 64px 이상이면
                     $("#navbar").addClass("scrolled"); // #navbar에 scrolled 클래스 추가
                 } else {
                     $("#navbar").removeClass("scrolled"); // 그렇지 않으면 scrolled 클래스 제거
@@ -82,7 +82,6 @@
             });
         });
 
-        // detail 클릭 시 화면 아래로 스크롤 이동
         $("#detail").click(function() {
             $("html, body").animate({scrollTop: windowHeight}, 500);
         });
