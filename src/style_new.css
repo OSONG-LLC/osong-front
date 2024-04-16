@@ -1,5 +1,12 @@
 @import url("//fonts.2w.vc/suit/static/font.css");
 
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -151,6 +158,10 @@ body #inner{
     height: fit-content;
 }
 
+#app-ecosong #main{
+    background-color: #DEC49F;
+}
+
 #app-dir #main-top{
     background-image: url("./background/dir.jpg");
     background-position: 50% 50%;
@@ -257,6 +268,38 @@ body #inner{
     border-radius: 24px;
     margin-top: 16px;
     padding: 24px;
+}
+
+#app-ecosong #main-content #inner{
+    align-items: center;
+    text-align: center;
+}
+
+#green-title{
+    font-family: "BMJUA";
+    font-size: 64px;
+    color: #5AA446;
+}
+
+#green-content{
+    font-family: "BMJUA";
+    font-size: 32px;
+    color: #78B325;
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
+}
+
+#app-ecosong #main-content img{
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+#sub-content{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 64px;
 }
 
 #footer{
