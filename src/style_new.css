@@ -310,3 +310,60 @@ body #inner{
     margin: 64px auto;
     opacity: 0.8;
 }
+
+/* 모바일 화면에 대한 스타일 조정 */
+/*
+@media only screen and (max-width: 768px) {
+    body #inner {
+        padding: 0 16px;
+    }
+
+    #navbar #inner #item {
+        margin: 8px 0;
+    }
+
+    #navbar #inner #item:first-child {
+        margin-left: 16px;
+    }
+
+    #main-top #inner #title {
+        font-size: 32px;
+    }
+
+    #main-top #inner #title-img {
+        height: 128px;
+    }
+
+    #main-top #inner #description {
+        font-size: 18px;
+        margin-top: 16px;
+    }
+
+    #main-top #inner #detail {
+        bottom: 32px;
+    }
+
+    #main-content #inner #item-container {
+        margin-bottom: 32px;
+    }
+
+    #main-content #inner #item {
+        padding: 16px;
+    }
+
+    #green-title {
+        font-size: 48px;
+    }
+
+    #green-content {
+        font-size: 24px;
+        margin-top: 16px !important;
+        margin-bottom: 16px !important;
+    }
+
+    #app-ecosong #main-content img {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+*/
