@@ -6,25 +6,25 @@
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta property = "og:type" content = "website">
     <meta property = "og:url" content = "osong.kr">
-    <meta property = "og:image" content = "http://osong.kr/src/ecosong_large.png">
+    <meta property = "og:image" content = "https://osong.kr/src/ogosong.jpeg">
     <meta property = "og:image:type" content = "image/jpeg">
-    <meta property = "og:title" content = "ecosong - OSONG">
+    <meta property = "og:title" content = "오시는 길 - OSONG">
     <meta property = "og:description" content = "분기의 힘으로 미래로 나아가다">
     <meta property = "og:site_name" content = "OSONG LLC.">
     <meta property = "og:locale" content = "ko_KR">
     <link rel = "icon" href = "./src/osong.png"/>
-    <title>ecosong - OSONG</title>
+    <title>오시는 길 - OSONG</title>
     <link rel = "stylesheet" href = "./src/style_new.css">
     <script src="https://npm.2w.vc/jquery@3.6.0/dist/jquery.min.js"></script>
 </head>
 <body>
-    <div id="app-ecosong">
+    <div id="app-dir">
         <div id="navbar">
             <div id="inner">
                 <a id="item" href="./"><img src="./src/icon.png">OSONG</a>
                 <div id="fill"></div>
                 <a id="item" href="./"><div id="active">홈</div><div id="deactive">홈</div></a>
-                <a id="item" href="./dir.html"><div id="active">오시는 길</div><div id="deactive">오시는 길</div></a>
+                <a id="item" href="./dir.html" class="active"><div id="active">오시는 길</div><div id="deactive">오시는 길</div></a>
             </div>
         </div>
     
@@ -32,28 +32,49 @@
             <div id = "main">
                 <div id="main-top">
                     <div id="inner">
-                        <div id = "title-img"><img src="./src/ecosong.png" alt=""></div>
+                        <h1 id = "title">오시는 길</h1>
+                        <p id = "description">오송스튜디오의 영업소를 확인해 보세요!</p>
                         <div id="detail">
                             <div id="icon"></div>
                             <div id="text">아래로 내려 확인하기</div>
                         </div>
                     </div>
                 </div>
-                <div id = "main-content">
+                <div id="main-content">
                     <div id="inner">
-                        <p id="green-title">탄소 중립에 대해 아시나요?</p>
-                        <p id = "green-content">탄소 중립이란, 개인이나 회사가 배출한 만큼의<br>온실가스를 다시 흡수해 실질 배출량을 0으로 만드는<br>지구온난화를 막기 위한 행동입니다.</p>
-                        <img src="./src/ecosong_img.png" alt="ecosong">
-                        <p id = "green-content">지구 기온이 2도 상승하면<br>생물 종의 약 10~40%가 멸종합니다.</p>
+                        <div id="item-container">
+                            <h1>본점</h1>
+                            <div id = "item">
+                                <h2>본사</h2>
+                                <p>010-9972-7439</p>
+                                <p>대전광역시 서구 갈마로 307, 204호</p>
+                            </div>
+                        </div>
+                        <div id="item-container">
+                            <h1>지점(직영)</h1>
+                            <div id = "item">
+                                <h2>버드코퍼레이션</h2>
+                                <p>0507-0177-0828</p>
+                                <p>경기도 화성시 동탄신리천로 270, 4층 402-174호</p>
+                                <p>주요 업무: 게임물 개발, 메타버스 콘텐츠 제작</p>
+                            </div>
+                        </div>
+                        <div id="item-container">
+                            <h1>가맹점</h1>
+                            <div id = "item">
+                                <h2>아이티엠코리아</h2>
+                                <p>010-2139-7116</p>
+                                <p>대전광역시 서구 대덕대로 18</p>
+                                <p>주요 업무: 컴퓨터 판매 및 수리</p>
+                            </div>
+                            <div id = "item">
+                                <h2>일산아이폰수리 픽서비스</h2>
+                                <p>010-2117-3179</p>
+                                <p>경기도 고양시 일산동구 중앙로1261번길 19, 2층 소호그린비즈니스센터 내 13호</p>
+                                <p>주요 업무: 휴대폰 수리</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <div id = "sub-content">
-                <div id="inner">
-                    <img src="./src/ecosong_large.png" alt="ecosong">
-                    <p id = "green-content">지금 당장, 우리에게 닥친 문제입니다.<br>남은 시간이 얼마 없습니다.</p>
-                    <p id = "green-content">2050 탄소 중립에 동참해 주세요.</p>
                 </div>
             </div>
     
