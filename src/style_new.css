@@ -211,8 +211,8 @@ body #inner{
 }
 
 #main-top #inner #title-img{
-    height: 256px;
-    flex-direction: row;
+    height: 16rem;
+    width: calc(100% - 64px);
     justify-content: center;
 }
 

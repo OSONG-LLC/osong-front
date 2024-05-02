@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang = "kr">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta property = "og:type" content = "website">
+    <meta property = "og:url" content = "osong.kr">
+    <meta property = "og:image" content = "http://osong.kr/src/ecosong_large.png">
+    <meta property = "og:image:type" content = "image/jpeg">
+    <meta property = "og:title" content = "ecosong - OSONG">
+    <meta property = "og:description" content = "분기의 힘으로 미래로 나아가다">
+    <meta property = "og:site_name" content = "OSONG LLC.">
+    <meta property = "og:locale" content = "ko_KR">
+    <link rel = "icon" href = "./src/osong.png"/>
+    <title>ecosong - OSONG</title>
+    <link rel = "stylesheet" href = "./src/style_new.css">
+    <script src="https://npm.2w.vc/jquery@3.6.0/dist/jquery.min.js"></script>
+</head>
+<body>
+    <div id="app-ecosong">
+        <div id="navbar">
+            <div id="inner">
+                <a id="item" href="./"><img src="./src/icon.png">OSONG</a>
+                <div id="fill"></div>
+                <a id="item" href="./"><div id="active">홈</div><div id="deactive">홈</div></a>
+                <a id="item" href="./dir.html"><div id="active">오시는 길</div><div id="deactive">오시는 길</div></a>
+            </div>
+        </div>
+    
+        <div id="scroll">
+            <div id = "main">
+                <div id="main-top">
+                    <div id="inner">
+                        <div id = "title-img"><img src="./src/ecosong.png" alt=""></div>
+                        <div id="detail">
+                            <div id="icon"></div>
+                            <div id="text">아래로 내려 확인하기</div>
+                        </div>
+                    </div>
+                </div>
+                <div id = "main-content">
+                    <div id="inner">
+                        <p id="green-title">탄소 중립에 대해 아시나요?</p>
+                        <p id = "green-content">탄소 중립이란, 개인이나 회사가 배출한 만큼의<br>온실가스를 다시 흡수해 실질 배출량을 0으로 만드는<br>지구온난화를 막기 위한 행동입니다.</p>
+                        <img src="./src/ecosong_img.png" alt="ecosong">
+                        <p id = "green-content">지구 기온이 2도 상승하면<br>생물 종의 약 10~40%가 멸종합니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "sub-content">
+                <div id="inner">
+                    <img src="./src/ecosong_large.png" alt="ecosong">
+                    <p id = "green-content">지금 당장, 우리에게 닥친 문제입니다.<br>남은 시간이 얼마 없습니다.</p>
+                    <p id = "green-content">2050 탄소 중립에 동참해 주세요.</p>
+                </div>
+            </div>
+    
+            <div id="footer">
+                <div id="inner">
+                    <h4>유한책임회사 오송스튜디오</h4>
+                    <p>법인등록번호: 160115-0000822</p>
+                    <p>대표자: 홍은표</p>
+                    <p>본점소재지: 대전광역시 서구 갈마로 307, 204호</p>
+                    <p>대표전화: 010-9972-7439 | 이메일: hackg179@gmail.com</p>
+                    <p>사업자 등록번호: 562-88-02727 | 통신판매업 신고번호: 2024-대전서구-0348</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let windowWidth = $(window).width(); // 전역 변수로 변경
+        let windowHeight = $(window).height(); // 전역 변수로 변경
+
+        $(window).resize(function() {
+            windowWidth = $(window).width(); // 전역 변수 업데이트
+            windowHeight = $(window).height(); // 전역 변수 업데이트
+            $("#main-top").css({
+                "width": `${windowWidth}px`,
+                "height": `${windowHeight}px`
+            });
+        });
+
+        $(document).ready(function() {
+            $(window).trigger("resize");
+
+            $(window).scroll(function() {
+                if ($(this).scrollTop() >= 64) { // 스크롤 위치가 64px 이상이면
+                    $("#navbar").addClass("scrolled"); // #navbar에 scrolled 클래스 추가
+                } else {
+                    $("#navbar").removeClass("scrolled"); // 그렇지 않으면 scrolled 클래스 제거
+                }
+            });
+        });
+
+        $("#detail").click(function() {
+            $("html, body").animate({scrollTop: windowHeight}, 500);
+        });
+    </script>
+</body>
+</html>
