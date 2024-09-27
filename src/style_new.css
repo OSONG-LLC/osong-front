@@ -263,6 +263,11 @@ body #inner{
     margin-top: 4px;
 }
 
+#daumRoughmapContainer1727408593620{
+    width: 100%;
+    margin-top: 16px;
+}
+
 #main-content #inner #item{
     border: solid 2px rgba(58, 58, 96, 0.1);
     border-radius: 24px;
