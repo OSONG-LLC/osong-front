@@ -33,7 +33,6 @@ html, body {
 }
 
 #container {
-    background-color: rgba(235, 223, 241, 0.7);
     width: 100%;
     height: calc(100% - 36px);
     text-align: center;
